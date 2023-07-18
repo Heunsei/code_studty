@@ -115,7 +115,7 @@ int main()
 
     // 깊은 복사
     auto class2 = class1;
-    std::cout << "1반을 복사해서 2반생성 : " << class2.to_string() << std::endl;
+    std::cout << "1반을 복사해서 2반생성 : " ;
 
     return 0;
 }
