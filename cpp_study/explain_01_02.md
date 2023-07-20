@@ -46,3 +46,16 @@ deq.push_back(6); >> {0, 1, 2, ,3 ,4, 5, 6}
 - empty(), size(), top(), push(), emplace() 등 제공
 - 스택은 기본적으로 vector가 아닌 deque 로 구현됨
 - std::stack<int, std::list<int>> stk; 이런 식으로 선언 가능
+### 9-2 std::queue
+- stack과 다르게 FIFO 방식
+- queue에서의 push는 push_back(), pop은 pop_front()을 의미
+```cpp
+std::queue<int> q;
+q.push(1);
+q.push(2);
+q.push(3); >> {1,2,3}
+q.pop(); >> {2,3}
+```
+### 9-3 priority_queue
+- 우선순위 큐 / 원소 제거는 최소,최대 원소에 한해서 가능
+- std::vector를 기본 컨테이너로 사용
