@@ -28,6 +28,7 @@ struct bst
             {
                 std::cout << value << "을(를) 찾았습니다" << std::endl;
                 return current;
+                // 현재 노드의 주소값 반환
             }
 
             if(value < current->data)
@@ -147,6 +148,4 @@ int main()
     std::cout << "중위순회: ";
     tree.inorder();
     std::cout << std::endl;
-
-
 }
