@@ -55,6 +55,9 @@ struct bst
                 if(!current->left)
                     current->left = new node {value, NULL, NULL};
                 else 
+                // 왼쪽에 있는 '객체'를 주소값으로 반환 하는거라 재귀시 current
+                // 는 왼쪽에 있는 객체가 되어버림
+                // 추가 할 때마다 node형 객체를 생성해 연결하는것
                     insert_impl(current->left,value);
             }
             else
