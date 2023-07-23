@@ -154,4 +154,6 @@ complex c1(3.0);
 complex c1 = 3.0;
 // 다음 구문 사용 가능
 complex c1 = pi * pi / 6.0;
+// 암묵적 변환이 일어나지 않게 하려면
+//explcit 키워드사용
 ```

@@ -72,4 +72,4 @@ static void levelOrder(node* start)
 - 부모 노드의 값 >= 왼쪽 자식 노드의 값
 - 부모 노드의 값 <= 오른쪽 자식 노드의 값
 - 삽입동작은 O(logN)의 복잡도를 가짐
-
+- 구현은 02_02.cpp
