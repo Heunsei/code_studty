@@ -79,7 +79,7 @@ auto mas(auto a, auto b)
 ## 3.2 이름공간과 함수 조회
 
 ### 3.2.1 namespace
-- 이름공간은 min이나 max abs같은 이름들을 여러 문맥에서 정의할 수 있게 하는 수단
+- 이름공간은 min이나 max, abs같은 이름들을 여러 문맥에서 정의할 수 있게 하는 수단
 - 이름공간이 없으면 서로 다른 문맥의 같은 이름들이 충돌해서 중의성 문제를 일으키기 쉽다.
 - namespace의 위계구조 의 특정 이름을 using 선언문을 이용해 현재 범위에 도입하면 이름공간 한정 없이 해당 이름만 간결하게 표기 가능
 - 안쪽 범위에서 함수를 선언하거나 정의하면 그 함수와 서명이 같은 바깥쪽 함수 중복적재 버전만 가려지는게 아니라 모든 함수 중복적재 버전이 가려진다, 즉 이름 가리기는 특정 중복적재 버전이 아니라 '이름' 자체를 가려버린다
@@ -94,3 +94,61 @@ auto mas(auto a, auto b)
 - 단, 인수 이름공간들의 부모 이름공간까지 검색을 확장하지는 않는다
 
 ## 3.3 클래스 템플릿
+- 클래스 템플릿은 벡터나 행렬, 목록 같은 범용 컨테이너 클래스를 만들때 유용
+
+### 3.3.1 컨테이너 예제
+- 선형대수의 벡터를 클래스로 만들어보자
+```cpp
+template <typename T>
+class vector
+{
+    public: 
+      explict vector(int size)
+        : my_size{size}, data{new T[my_size]}
+      {}
+      
+      vector(const vector& taht)
+        : my_size{that.my_size}, data{new T[my_size]}
+      {
+        std::copy(&that.data[0], &that.data[that.my_size], &data[0]);
+      }
+
+      int size() const {return my_size}
+
+      const T& operator[](int i) const
+      {
+        check_index(i);
+        return data[i];
+      }
+    private:
+      int my_size;
+      std::unique_ptr<T[]> data
+}
+```
+- 멤버들의 형식을 지정하는데 쓰이는 여분의 형식매개변수 T가 있을뿐 근본적으로 보통의 클래스 선언과 다르지 않다
+
+### 3.4.2 decltype
+- 명시적인 형식이 필요하지만 auto를 사용할 수 없을 때 중요함
+```cpp
+// 덧셈 연산자가 두 벡터들의 첫 요소들의 합을 돌려준다 할때 그 연산자의
+// 반환형은 두 벡터의 요소를 합을 온전히 담을 수 있는 v1[0] + v2[0]이어야한다
+template <typename Vector1, typename Vector2>
+auto operator+(const Vector1& v1, const Vector2& v2)
+ -> vector<decltype(v1[0] + v2[0]) >;
+ // 후행 반환 형식
+ // 함수 이름 앞에 v1과 v2가 선언되지 않았기 때문에 반환식에 v1[0] + v2[0]
+ // 라고 쓸 수 없기 때문에 표현식이 유효해지지 않음
+```
+
+### 3.4.3 decltype(auto)
+- decltype(expr) = expr;
+- decltype(auto) = expr;
+- 반환 형식을 연역할때 한정사들을 유지하는것이 중요함
+- 요청된 벡터 요소가 특정 범위에 속하는지 판정하는 벡터 뷰를 만든다 할때 이 뷰의 operator[]은 지정된 요소가 범위에 속한다면 요소를 돌려줘야 하는데, 이때 반환 형식은 원래의 벡터요소에 적용된 한정사를 모두 유지해야함
+
+### 3.4.6 형식 정의
+- 형식을 정의하는 수단 typedef, using
+- typedef double value_type; > 새 이름이 오른쪽
+- using value_type = double > 새 이름이 왼쪽
+
+## 3.5 템플릿 특수화
