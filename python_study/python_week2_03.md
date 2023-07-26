@@ -78,7 +78,13 @@ class Person
   def __init__(self,name):
   #인스턴스 변수
     self.name = name
+  #Person.increse_person(1)
     Person.count += 1
+
+  @classmethod
+  def increse_person(cls,num)
+    count += num
+  
   @classmethod
   def number_of_population(cls):
     print(f'인구수는 {cls.count}입니다.')
