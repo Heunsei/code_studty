@@ -83,7 +83,7 @@ class Person
 
   @classmethod
   def increse_person(cls,num)
-    count += num
+    cls.count += num
   
   @classmethod
   def number_of_population(cls):
