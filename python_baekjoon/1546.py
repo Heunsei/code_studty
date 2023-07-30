@@ -6,6 +6,7 @@
 num_of_score = int(input())
 
 scores = []
+# 입력값을 ' '로 구분해서 int형식으로 변환 후 리스트 형태로 반환
 scores = list(map(int, input().split(' ')))
 
 max_score = scores[0]
