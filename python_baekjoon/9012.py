@@ -27,10 +27,6 @@ def compare(get_string):
         print("YES")
     else :
         print("NO")
-        
-        
-        
-    
     
 test_case = int(input())
 
