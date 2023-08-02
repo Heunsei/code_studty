@@ -3,6 +3,7 @@ T = int(input())
 for tc in range(1, T+1):
     num_of_cards = int(input()) # 카드의 수
     card = int(input()) # 카드들
+    # card = list(map(lit,input()))
 
     card_list = []
 
@@ -23,6 +24,7 @@ for tc in range(1, T+1):
     card_idx = 0
 
     for i in range(len(tmp)):
+        # >=으로 수정필요
         if tmp[i] > many_card:
             many_card = tmp[i]
             card_idx = i

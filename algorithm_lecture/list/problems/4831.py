@@ -13,17 +13,17 @@ for tc in range(1, T+1):
     print(line)
     
     count = 0
-    now = K
+    now_position = K
     charge = 0
-    while now < N:
-        if line[now] == 1:
+    while now_position < N:
+        if line[now_position] == 1:
             count += 1
-            charge = now
-            now += K
+            charge = now_position
+            now_position += K
         else:
-            now -= 1
+            now_position -= 1
         
-        if charge == now:
+        if charge == now_position:
             count = 0
             break
     print(f'#{tc} {count}')
