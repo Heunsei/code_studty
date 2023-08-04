@@ -8,12 +8,14 @@ for tc in range(1,T+1):
         n, m = list(map(int,input().split()))
         # station 에 넣어주기
         # 1번째는 idx 0에 해당
-        for j in range(n-1,m):
-            station[j] +=1
+        for j in range(n-1, m):
+            station[j] += 1
+
+
     P = int(input())
     check_list = [int(input()) for _ in range(P)]
     result = []
-    
+    # 1일때
     for i in check_list:
         result.append(station[i-1])
     
