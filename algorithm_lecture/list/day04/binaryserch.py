@@ -5,7 +5,7 @@ def binary_serch(arr, N, key):
     end = N-1
     mid = N // 2
     while start <= end: #시작지점이 끝보다 작은동안만
-        mid = (start + end) //2
+        mid = (start + end) // 2
         if arr[mid] == key:
             return True
         elif arr[mid] > key:

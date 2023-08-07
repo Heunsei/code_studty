@@ -19,19 +19,19 @@ for _ in range(100000):
 - 값을 저장할 노드와 다음 노드의 주소를 가진 노드 두개가있음
 
 ### Stack - 후입선출 구조
-- 맨위 의 값 > head or top으로 표현 
+- 맨위 의 값 > head or top 으로 표현 
 
 ### Queue - 선입선출
-- std::queue
-- form collentions import deque
-- Queue모듈이 있긴한데 느려서 잘안쓰고 deque씀 (python)
+- cpp >>> std::queue
+- python >>> form collections import deque
+- Queue 모듈이 있긴한데 느려서 잘안쓰고 deque씀 (python)
 - q.push(dataa) , q.append(data)
 - q.pop() <- 맨 앞요소 삭제, q.popleft()
 
 ### Priority Queue (Heap)
 - cpp > priority_queue<int> pq -max_heap  
 - python > import heapq - min_heap
-- queue에 PriorityQueue가 있긴함 threadSafe해서 느림
+- queue 에 PriorityQueue 가 있긴함 threadSafe 해서 느림
 - 그래서 heapq 사용
 - 시간 복잡도는 주로 logN
 

@@ -3,7 +3,7 @@ sys.stdin = open('input.txt')
 
 di = [1, 0, 0]
 dj = [0, -1, 1]
-
+# 배열, 시작값 i, j
 def serch(arr, i, j):
     check = [[0]*100 for _ in range(100)]
     to_return = j
