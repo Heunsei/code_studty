@@ -1,25 +1,25 @@
 import sys
 sys.stdin = open('input.txt')
 
+def check_string(compare, pattern):
+    t_idx = 0
+    p_idx = 0
+    t_len = len(compare)
+    while t_idx < t_len:
+        if compare[t_idx] != pattern[p_idx]:
+            t_idx -= p_idx
+            p_idx = -1
+        t_idx += 1
+        p_idx += 1
+        if p_idx == len(pattern):
+            return True
+    return False
+
 T = int(input())
 for tc in range(1, T+1):
-    key = input()
+    pat = input()
     compare = input()
-    #print("key", key)
-    #print("compare", compare)
-    N = len(key)
-    index = []
-
-    for i in range(len(compare)):
-        if compare[i] == key[0]:
-            index.append(i)
-
-    print(f'index:{index}')
-    count = 0
-    for i in index:
-        for j in range(N):
-            if compare[i+j] != key[j]:
-                continue
-        if j == N-1:
-            count += 1
-    print(count)
+    if check_string(compare, pat):
+        print(f'#{tc} {1}')
+    else:
+        print(f'#{tc} {0}')
