@@ -59,3 +59,63 @@ def bfs():
             if adj[now][nxt]:
                 dq.append(nxt)
 ```
+
+## 인접행렬 인접리스트
+- 인접행렬 O(N^2)
+- 인접리스트 O(V+E)
+
+# 델타탐색
+- cpp
+```cpp
+const int di[4] = {0, 1, 0, -1};
+const int dj[4] = {1, 0, -1, 0};
+int N;
+bool chk [100][100];    // 방문체크
+
+bool isValidCoord(int i, int j){
+    return 0 <= y && y < N && 0< = x && x < N;
+    }
+void dfs(int i, int j){
+    chk[i][j] = true;
+    for (int k = 0; k < 4 ; K++){
+        int ni = di[k] + i;
+        int nj = dj[k] + j;
+    if(isValidCoord(ni, nj) && !chk[ni][nj]
+        dfs(ni,nj);
+    }
+}
+```
+
+- python
+```python
+di = (0,1,0,-1)
+dj = (1,0,-1,0)
+chk = [[False] * 100 for _ in range(100)]
+
+def is_valid_coord(i, j)
+    return 0 <= i < N and 0 <= j < N
+
+def bfs(start_i,start_j)
+    q = deque()
+    q.append((start_i, start_j))
+    while len(q) > 0:
+        i, j = q.popleft()
+        chk[i][j] = True
+        for k in ragne(4):
+            ni = di[k] + i
+            nj = dj[k] + j
+            if is_valid_coor(ni,nj) and not chk[ni]nj]:
+            q.append((ni,nj))
+```
+
+### 백트래킹
+- 가능한 덜보겠다
+- 가망성이 없으면 가지않는다
+- DFS/BFS랑 방식은 유사하다
+
+## 정리
+- 공통점
+1. 그래프 탐색 알고리즘
+2. 완전 탐색 알고리즘(느림)
+- 차이점
+1. 탐색순서(BFS는 좌우, DFS는 맨 아래부터) 최단거리랑 관련
