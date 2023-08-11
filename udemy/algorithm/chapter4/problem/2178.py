@@ -27,7 +27,7 @@ def bfs():
             ni = i + di[k]
             nj = j + dj[k]
             if is_valid_coord(ni, nj) and board[ni][nj] == '1' and not chk[ni][nj]:
-                chk[ni][nj] == True
+                chk[ni][nj] = True
                 dq.append((ni, nj, nd))
 
 print(bfs())
