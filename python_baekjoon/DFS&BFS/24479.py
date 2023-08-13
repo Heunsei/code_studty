@@ -8,7 +8,6 @@ visited = [0] * (N+1)
 # global로 전역변수를 관리
 cnt = 1
 
-
 def DFS(t):
     global cnt
     # 첫 방문값은 1
