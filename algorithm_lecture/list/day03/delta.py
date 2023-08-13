@@ -11,7 +11,7 @@ for i in range(N): # i, j에 대해
         for k in range(4):
             ni, nj = i+di(k), j+dj[k]
             if 0 <= ni < N and 0 <= nj < N:
-                s +=arr[ni][nj]
+                s += arr[ni][nj]
         # 주변원소 합
         if max_v < s:
             max_v = s
