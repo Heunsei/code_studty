@@ -1,7 +1,7 @@
 cal = '2+3*4/5'
 
 result = ''
-
+# 연산자
 stack = []
 
 for char in cal:
