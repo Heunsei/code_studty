@@ -1,4 +1,4 @@
-# 방향이 없는 그래프
+=# 방향이 없는 그래프
 import pprint
 import sys
 sys.setrecursionlimit((10 ** 6))
