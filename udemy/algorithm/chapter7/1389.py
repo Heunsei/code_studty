@@ -53,7 +53,7 @@ for i in range(N):
 # 인덱스랑 같이 받아오기
 for i, v in enumerate(kevin):
     if ans[1] > v:
-        ans(i, v)
+        ans = (i, v)
 
 print(ans[0] + 1)
 
