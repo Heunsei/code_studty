@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open('input.txt')
 
+
 def search(now, acc):
     global result
     # 가지치기는 똑같이 진행
@@ -14,11 +15,13 @@ def search(now, acc):
     else:
         # 현재 열(now)에서 가능한 모든 행(row)를 탐색
         for row in range(N):
+            # visited 하나로 표를 순회하면서 값을 확인
             # 아직 방문한적 없다면,
             if visited[row] == 0:
                 visited[row] = 1    # 현재 행 값 쓰겠다.
                 search(now + 1, acc + arr[now][row])
                 visited[row] = 0
+
 
 T = int(input())
 
