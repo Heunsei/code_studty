@@ -10,10 +10,13 @@ def isInRange(i, j):
 def bfs(pos_i, pos_j):
     visited = [[False] * N for _ in range(N)]
     dq = deque()
+    # dq 에 넣어줄 때 count를 저장할 0을 같이 넣어줌
     dq.append((pos_i, pos_j, 0))
     visited[pos_i][pos_j] = True
     while dq:
+        # 좌표 1,2 count
         i, j, d = dq.popleft()
+        # 도착점을 만나면 d를 출력
         if arr[i][j] == '3':
             return d - 1
         nd = d + 1
