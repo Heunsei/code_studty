@@ -9,7 +9,7 @@ for tc in range(1, T+1):
     now = 0
     acc = 0
 
-    stack = [(now, acc, visited[:])] # 매 조사 대상마다 visited 는 별개처리
+    stack = [(now, acc, visited[:])]  # 매 조사 대상마다 visited 는 별개처리
     while stack:
         # 다음 조사 대상
         now, acc, visited = stack.pop()

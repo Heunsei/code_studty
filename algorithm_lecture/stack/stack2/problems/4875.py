@@ -11,7 +11,6 @@ def BFS(start_i, start_j):
     chk[start_i][start_j] = True
     dq = deque()
     dq.append((start_i, start_j))
-
     while dq:
         i, j = dq.popleft()
         for k in range(4):
