@@ -6,6 +6,7 @@ def preorder(node):
     # preorder(right[node])
     preorder(tree[node][0])
     preorder(tree[node][1])
+
 # LVR
 def inorder(node):
     if node == 0:
