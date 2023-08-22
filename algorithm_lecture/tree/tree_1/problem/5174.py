@@ -16,6 +16,7 @@ for tc in range(1, T+1):
     # 간선정보
     arr = list(map(int, input().split()))
 
+    parent = [0] * (V + 1)
     left = [0] * (V+1)
     right = [0] * (V+1)
     cnt = 0
@@ -25,6 +26,10 @@ for tc in range(1, T+1):
             left[p] = c
         else:
             right[p] = c
-
+        parent[c] = p  # 부모 리스트에 저장
     order(N)
+
+    print(left)
+    print(right)
+    print(parent)
     print(f'#{tc} {cnt}')

@@ -46,6 +46,7 @@ for i in range(E):
         left[p] = c
     else:
         right[p] = c
+
     parent[c] = p  # 부모 리스트에 저장
 
     if tree[p][0] == 0:
@@ -59,6 +60,10 @@ for i in range(1, V+1):
     if parent[i] == 0:
         root = i
         break
+
+print(left)
+print(right)
+print(parent)
 
 print('------전위순회------')
 preorder(root)
