@@ -10,10 +10,10 @@ min_value = sys.maxsize
 for r1 in combinations(members, n//2):
     start, link = 0, 0
     r2 = list(set(members) - set(r1))
-    for r in range(combinations(r1,2)):
+    for r in combinations(r1, 2):
         start += graph[r[0]][r[1]]
         start += graph[r[1]][r[0]]
-    for r in range(combinations(r2, 2)):
+    for r in combinations(r2, 2):
         link += graph[r[0]][r[1]]
         link += graph[r[1]][r[0]]
 

@@ -6,7 +6,6 @@
 - BST (이진탐색트리) 의 탐색 시간은 O(logN)
 
 # 구현
-- 노
 ```python
 class Node:
     def __init__(self, value):
@@ -40,6 +39,17 @@ class BST:
                     temp.right = new_node
                     return True
                 temp = temp.right
-          
+    def contains(self, value):
+        # if self.root is None:
+        #     return False
+        temp = self.root
+        while temp is not None:
+            if value < temp.value:
+                temp = temp.left
+            elif value > temp.value:
+                temp = tmep.right
+            else:
+                return True
+        return False
 
 ```
