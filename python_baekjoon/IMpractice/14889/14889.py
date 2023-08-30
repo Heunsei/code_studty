@@ -1,4 +1,4 @@
-# 백트래킹을 이용한 방법
+# DP와 백트래킹을 이용한 방법
 import sys
 n = int(sys.stdin.readline())
 graph = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
