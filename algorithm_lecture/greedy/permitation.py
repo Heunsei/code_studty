@@ -2,7 +2,7 @@
 # r : 최대 조사 대상 수
 def perm(now, r):
     if now == r:
-        print(num)
+        print(check)
         return
     else:
         # 완전 검색을 통해서 조사

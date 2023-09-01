@@ -26,6 +26,23 @@ for i in range(1<<N):
                 subset1.append(a[j])
     print(*subset1)
 ```
+# 길이가 n인 순열 구하기
+```python
+# 자연수 N과 M이 주어졌을때 길이가 M인 수열을 모두 구하는 프로그램
+N, M = map(int, input().split())
+s = []
+def dfs():
+    if len(s) == M:
+        print(' '.join(map(str, s)))
+        return
+    for i in range(1, N+1):
+        if i not in s:
+            s.append(i)
+            dfs()
+            s.pop()
+dfs()
+
+```
 
 # 배낭 짐싸기
 - Knapsack 문제의 정형적 정의
