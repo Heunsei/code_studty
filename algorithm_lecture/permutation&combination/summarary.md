@@ -96,6 +96,18 @@ int main(void){
     return 0
 ```
 
+# 비트연산으로 조합 생성
+```python
+a= [3,6,7,1,5,4]
+N = 6
+for i in range(1<<N):
+    subset1 = []
+    for j in range(N):
+            if i&(1<<j): # j번 비트가 0이 아니면
+                subset1.append(a[j])
+    print(*subset1)
+```
+
 # 중복 조합
 - 순서를 따지지 않고, 중복을 허용한다.
 - 조합과 구현이 비슷하나 반복문의 시작 값은 이전에 선택한 값이 된다.
