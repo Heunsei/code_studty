@@ -31,7 +31,7 @@
   - HTML 문서에 관련된 설정, 설명 등
   - 사용자에게 보이지 않음
 
-- body /body>
+- body /body
   - 페이지에 표시되는 모든 컨텐츠
 
 ## 1.3 HTML 구조 태그
@@ -42,7 +42,7 @@
   - ol, ul, li
 
 - Empasis & Importance
-  - em, string
+  - em, strong
 
 
 ## 2. CSS
