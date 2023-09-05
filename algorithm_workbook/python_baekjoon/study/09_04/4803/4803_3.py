@@ -1,7 +1,7 @@
 import sys
+sys.stdin = open('input.txt')
 input = sys.stdin.readline
 # 유니온 파인드
-
 
 def union(x, y):
     x = find(x)
@@ -40,7 +40,8 @@ while True:
     # find 함수를 쭉 돌려서 각 정점의 parents 를 갱신한다.
     for i in range(n + 1):
         find(i)
-
+    print(cycle)
+    print(parents)
     parents = set(parents)
     ans = sum([1 if i not in cycle else 0 for i in parents]) - 1
     if ans == 0:
