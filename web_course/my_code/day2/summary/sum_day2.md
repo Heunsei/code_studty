@@ -97,33 +97,39 @@
   - 이 컨테이너의 1차 자식 요소들이 Flex item이 됨
   - flexbox 속성 값들을 사용하여 자식요소 flex item들을 배치
 ### 3.2 레이아웃 구성
-- 1. Flex Container 지정
-```html
-.container{
-  height: 500px;
-  border: 1px solid black;
-  display flex;
-}
-```
-- 2. flex-direction 지정
-```html
-  flex-direction = column -reverse;
-```
-- 3. flex-wrap
-  - flex item 목록이 flex contaioner의 하나의 행에 들어가지 않을 경우 다른 행에 배치 할 지 결정
-- 4. 메인 축 정렬
-  - justify-content: flex end 오른쪽 정렬
-  - justify-content: center 가운데 정렬
-  - justify-content: flex end 오른쪽 정렬
-- 5. 교차 축 정렬
-  - 여러 행을 위 아래로 이동 warp 사용하면 확인 가능
-  - alien-content: flex-start > 
-  - alien-content: center > 
-- 6. 교차 축이 여러 행이 아닐때
-  - 여러행이 되면 정렬이 안됨
-  - alien-items: center
-- 수직 수평 가운데 정렬
-  - main축 center + 교차축 center
-- 7. flex-grow
-  - 비율 맞춰서 꽉채워라
-- 8. flex-basis
+- 컨테이너 적용 속성들
+  1. flex-dirction
+    - row : 웹사이트 내에서 가로로 순차적 배치(기본값)
+    - row - reverse : 가로로 역순 배치
+    - column : 세로로 순차적 배치
+    - column : 세로로 역순 배
+  2. flex-wrap
+    - wrap : 화면 너비에 따라 자동으로 줄바꿈
+    - wrap-reverse : 화면 너비에 따라 자동 줄바꿈 되고 역순 배치
+    - nowarp : 화면 너비에 따라 컨텐츠 크기가 달라짐
+  3. justify-content
+    - flex-start : 왼쪽 정렬
+    - flex-end : 오른쪽 정렬
+    - center : 중앙 정렬
+    - space-between : 일정 간격으로 정렬
+    - space-around : 좌우 여백을 동일한 간격으로 정렬
+  4. align-items
+    - flex-start : 위쪽 정렬
+    - flex-end : 아래쪽 정렬
+    - center : 세로 중앙 정렬
+    - stretch : 상하 끝으로 늘려서 정렬
+    - baseline : 베이스라인에 맞춰 정렬
+  5. align-content
+    - flex-start : 위쪽 정렬
+    - flex-end : 아래쪽 정렬
+    - center : 세로 중앙 정렬
+    - stretch : 상하 끝으로 늘려서 정렬
+    - space-between : 처음과 마지막 사이의 일정 간격으로 정렬
+    - space-around : 좌우 여백을 동일한 간격으로 정렬
+  
+  - 컨텐츠 적용 속성
+  1. align-self : 해당 컨텐츠만 따로 정렬
+  2. order : 해당 컨텐츠만 양수 또는 음수로 배치 순서를 따로 정렬
+  3. flex-grow : 웹사이트 크기를 기준으로 해당 컨텐츠가 차지하는 비율을 결정하며, 0~3까지 비율을 설정 가능
+  4. flex-basis : 웹사이트 크기에 맞춰 늘어나거나 줄어들 때, 해당 컨텐츠가 차지하는 비율을 결정하며, 각각의 컨텐츠별로 비율 설정 가능
+  5. flex-shrink : 웹사이트가 줄어들때 해당 컨텐츠의 크기가 줄어드는 비율을 정함
