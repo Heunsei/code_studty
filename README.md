@@ -3,6 +3,8 @@
 
 ## 23/09/05
 - BOJ 1967 트리에서의 가중치
+## 23/09/04
+- union & find
 ## 23/9/01
 - https://hongchan.tistory.com/5
 - SWEA 2817 조합 만들기
