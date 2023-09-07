@@ -1,34 +1,32 @@
 from collections import deque
+
+def bfs():
+    global board, answer
+    moves = [(1, 0), (0, 1), (-1, 0), (0,- 1)]
+    deq = deque([(0, 0, 0)])
+    visited = [[[0]*m for _ in range(n)] for _ in range(2)]
+    visited[0][0][0] = 1
+    while deq:
+        x, y, z = deq.popleft()
+        if x == n-1 and y == m-1:
+            return visited[z][x][y]
+        for dx, dy in moves:
+            nx = dx + x
+            ny = dy + y
+            if 0 <= nx < n and 0 <= ny < m:
+                # 벽이 아니고 방문하지도 않은 경우
+                if not board[nx][ny] and not visited[z][nx][ny]:
+                    visited[z][nx][ny] = visited[z][x][y] + 1
+                    deq.append((nx, ny, z))
+                # 벽인데 아직 부술 수 있는 기회가 남아있는 경우
+                elif board[nx][ny] and z == 0:
+                    visited[z + 1][nx][ny] = visited[z][x][y] + 1
+                    deq.append((nx, ny, z+1))
+
+    return 1e9
+
+
 n, m = map(int, input().split())
-graph = []
-# 3차원 행렬을 통해 벽의 파괴를 파악함. visited[x][y][0]은 벽 파괴 가능. [x][y][1]은 불가능.
-visited = [[[0] * 2 for _ in range(m)] for _ in range(n)]
-visited[0][0][0] = 1
-for i in range(n):
-    graph.append(list(map(int, input())))
-# 상하좌우
-dx = [0, 0, 1, -1]
-dy = [1, -1, 0, 0]
-def bfs(x, y, z):
-    queue = deque()
-    queue.append((x, y, z))
-
-    while queue:
-        a, b, c = queue.popleft()
-        if a == n - 1 and b == m - 1:
-            return visited[a][b][c]
-        for i in range(4):
-            nx = a + dx[i]
-            ny = b + dy[i]
-            if nx < 0 or nx >= n or ny < 0 or ny >= m:
-                continue
-            if graph[nx][ny] == 1 and c == 0 :
-                visited[nx][ny][1] = visited[a][b][0] + 1
-                queue.append((nx, ny, 1))
-            elif graph[nx][ny] == 0 and visited[nx][ny][c] == 0:
-                visited[nx][ny][c] = visited[a][b][c] + 1
-                queue.append((nx, ny, c))
-    return -1
-
-
-print(bfs(0, 0, 0))
+board = [list(map(int, list(input()))) for i in range(n)]
+answer = bfs()
+print(-1 if answer == 1e9 else answer)
