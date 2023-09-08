@@ -1,0 +1,76 @@
+.eng{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 32px;
+}
+.eng-18{
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
+}
+.eng-main{
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+.kor{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.kor-main{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 0;
+}
+.kor-intro{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+.kor-600{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+}
+.kor-900{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 900;
+}
+.main-style{
+  height: 100vh;
+  width: 80vw;
+  color: white;
+  background-color: #110105;
+}
+.tall{
+  height: 100%;
+}
+.main-sort-left{
+  flex-direction: column;
+  text-align: right;
+  height: 100%;
+  justify-content: space-between;
+}
+.main-sort-right{
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.introduce{
+  height: 50vh;
+  width: 80vw;
+  color: gray;
+  background-color: #00FFFF;
+}
+.intro-box{
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills{
+  width: 80vw;
+  height: 400px;
+}
+.interest{
+
+}
