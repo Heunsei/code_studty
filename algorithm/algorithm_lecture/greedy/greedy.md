@@ -11,7 +11,7 @@ def f(i, N):
                 used[j] = 1
                 f(i+1, N)
                 used[j] = 0
-
+p = [0] * 6
 card = list(map(int, input()))
 used = [0] * 6  # 이미 사용한 카드인지 표시
 ```
