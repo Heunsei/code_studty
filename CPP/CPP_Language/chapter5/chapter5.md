@@ -32,3 +32,52 @@ function_name(char)
 - comparison 
 - searching
 - and other
+
+# C++ style string
+- #include<string>
+- std namespace
+- dynamic size
+- work with input and output streams
+- operator (+, =, <, <=, >, >=) can be used
+
+## declaring
+- string s1;              //empty
+- string s2 {"Frank"};
+- string s3 {s2};
+- string s4 {"Frank", 3};  // Fra
+- string s5 {s3, 0, 2};   // 0으로부터 두개
+
+## assignment
+- string s1;
+- s1 = "C++ Rocks!";
+- stirng s2 {"Hello"};
+- s2 = s1
+
+## concatenation
+- string part1 {"C++"};
+- string part2 {"is a powerful"};
+- string sentence;
+- sentence = part1 + " " + part2 + " language";
+- sentence = "C++" + " is powerful:; // Illegal
+
+## accessing
+- [] and at() method
+
+## substr
+- 문자열의 일부를 return
+- pos 부터 count 길이 만큼의 문자열을 return
+
+## string.find
+- 문자열 에서의 str의 위치를 리턴
+- string s1 = {"This is a test"};
+- cout << s1.find("This"); // 0
+- cout << s1.find("is"); // 2
+- cout << s1.find("XX"); // std::npos
+
+## string.erase() or clear()
+
+## string.length()
+
+# getline(cin, str_name, 'delim')
+- 종결문자까지 문자를 읽어옴 없으면 \n으로 인식
+- or cin.getline(char * str, streamsize n, char delim);
