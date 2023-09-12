@@ -18,6 +18,6 @@
 - 의존성 패키지 목록 생성
   - $ pip freeze > requirements.txt
 - Django 프로젝트 생성
-  - $ django-adming startproject firstpjt .
+  - $ django-admin startproject firstpjt .
 - Django 서버 실행
   - $ python manage.py runserver

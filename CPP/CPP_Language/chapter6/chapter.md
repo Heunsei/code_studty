@@ -34,3 +34,13 @@ int function_name()
   return 0;
 }
 ```
+
+# parameter copy
+```cpp
+// local의 num은 변하지 않음
+// 복사본의 값을 1000으로 바꾸는 것 
+void change(int num)
+{
+  num = 1000;
+}
+```
