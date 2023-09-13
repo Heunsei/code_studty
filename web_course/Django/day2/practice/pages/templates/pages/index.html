@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}
+  메인페이지  
+{% endblock title %}
+
+{% block content %}
+  <h1>PAGES INDEX PAGE</h1>
+  {% comment %} <a href="http://127.0.0.1:8000/articles/">articles</a>
+  <a href="/articles/">articles2</a>
+  <a href="articles/">articles3</a> {% endcomment %}
+  <a href="{% url "articles:index" %}">[ARTICLES]</a>
+{% endblock content %}
