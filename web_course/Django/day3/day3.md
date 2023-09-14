@@ -1,5 +1,5 @@
 # Django-MODEL
-- model을 통해 DB를 관리
+- model class를 통해 DB를 관리
 - DB의 테이블을 정의하고 데이터를 조작가능한 blue-print제공
 - id title content 등을 가진 설계도를 만드는 것을 models.py에서 진행
 - 클래스 형식으로 작성
@@ -9,13 +9,14 @@
 - 2. class 아래에 선언한 클래스 변수명으로 테이블의 Field(col)을 생성
 - 3. models.(Data_type) 테이블 필드의 데이터 타입을 선언
     - DB의 데이터 타입을 일치화 시킴
-- 4. model Fiedl 클래스의 키워드 인자
+- 4. model Field 클래스의 키워드 인자
     - max_length > 길이를 제약 시킴
     - 데이터가 올바르게 저장되고 관리되도록 하기 위한 규칙
     - 숫자만 저장되도록, 문자의 길이를 제약시키는 등
 
 ## Migrations
 - models 클래스의 변경사항을 DB에 최종 반영
+- 아이디어 스케치 - 설계도 작성 - build 라 생각하면 될듯 함
 - 설계도 초안 만들기 -[makemigrations]-> migration파일 -[migrate]-> db.sqlite3(DB)
 
 ### 핵심 명령어
@@ -47,7 +48,7 @@
 - automatic admin interface
   - 자동으로 관리자 인터페이스 제공
 - 설계도 클래스 들은 어플리케이션의 admin.py에 등록하지 않으면 admin사이트에서 사용할 수 없다
-
+- $ python manage.py createsuperuser
 
 ## DB초기화
 - 1. migration 파일삭제
