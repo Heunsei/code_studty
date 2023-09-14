@@ -51,6 +51,7 @@
         "xmemory": "cpp",
         "xstddef": "cpp",
         "xtr1common": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "queue": "cpp"
     }
 }
