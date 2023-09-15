@@ -109,14 +109,29 @@ cout << (p1 == p2) << endl; // 값은 같으나 서로 다른 주소를 가르�
 cout << (p1 == p3) << endl; // True
 ```
 
-# const pointer
-- pointer to constants
-  - data pointed to by the pointers is constant and cannot be changed
-  - pointer itself can change and point somewhere else.
+# 상수를 가리키는 포인터 - const int *ptr
+- 포인터가 가리키는 대상을 상수화, 변수가 상수가 아니더라도 상수로 취급한다
+- 주소는 변경이 가능하지만 포인터로 접근해 값을 직접 변경하는것은 불가능하다
+- 함수의 파라미터에서 실수로 배열을 변경하지 못하도록 할때 사용
 ```cpp
 int high_score {100};
 int low_score {50};
 const int *score_ptr {&high_score};
-*score_ptr = 86; // error
-score_ptr = &low_score; // okay
+*score_ptr = 86; // 주소에 접근해 값을 변경한다 > error
+score_ptr = &low_score; // ptr의 주소를 low_socre의 주소로 변경 okay
 ```
+
+# 상수 포인터 - ins const * ptr
+- const 키워드를 사용해 포인터 자체를 상수화 시킴
+- 포인터가 상수화 되었기에 주소는 변경이 불가능하지만 주소안에 들어있는 값을 변경하는것은 가능하다
+```cpp
+int a {100};
+int b {200};
+int *const ptr {&a}; // 상수 포인터 ptr에 a의 주소를 넣어줌
+ptr = &b; // ptr에 b의 주소를 지시하도록 한다 > error
+*ptr = 300; // ptr안에있는 값을 변경한다
+```
+
+# 상수를 가리키는 상수 포인터 - const int *const ptr
+- 위의 두 개념을 모두 합친 포인터
+

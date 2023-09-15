@@ -4,13 +4,13 @@
 - 콘텐츠를 변수 값에 따라 바꾸고 싶을 때
 - DTL (Django Template Language)
   - html에 프로그래밍적 기능을 추가
-```django
+
+```cpp
 def index(request):
   context = {
       'name' : 'jain',
   }
   return render(request, 'articles/index.html', context)
-
 <body>
   <h1>Hello, {{name}}</h1>
 </body>

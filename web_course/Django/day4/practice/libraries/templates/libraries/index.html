@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {% for book in books %}
+  <ul> 
+    <hr>
+    <li>제목 : {{book.title}}</li>
+    <li>저자 : {{book.author}}</li>
+    <li>출판일 : {{book.pubdate}}</li>
+    <li>가격 : {{book.price}}원</li>
+    <hr>
+  </ul>
+  {% endfor %}
+</body>
+</html>

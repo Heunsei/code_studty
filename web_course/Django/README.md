@@ -65,3 +65,4 @@ INSTALLED_APPS에 저장
 2. 특정 경로에 요청이 왔을때 적절한 처리하기  -> views.py
 3. 적절한 처리 과정에서 template이 필요하다면 작성  -> templates/*.html
 4. 작성된 temlplate을 사용자에게 반환 -> viesw에 정의한 함수의 return
+
