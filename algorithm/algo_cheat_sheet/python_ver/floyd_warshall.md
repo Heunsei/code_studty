@@ -7,11 +7,11 @@ INF = int(1e9)
 n , m = map(int,input().split())
 
 # 거리들을 저장할 2차원 리스트
-dist =  [[INF] * (n + 1) for i in range(n+1)]
+graph =  [[INF] * (n + 1) for i in range(n+1)]
 
 # 자기 자신을 0으로 초기화
 for i in range(n+1):
-    dist[a][a] = 0
+    graph[a][a] = 0
 
 for _ in range(m):
     a,b,c = map(int, input().split())
