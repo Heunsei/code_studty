@@ -1,10 +1,10 @@
+// N-queen
 #include <iostream>
 # define MAX 15
 using namespace std;
 
 int col[MAX];
 int N, total = 0;
-
 bool check(int level)
 {
     for(int i = 0; i < level; i++)
@@ -12,10 +12,10 @@ bool check(int level)
             return false;
     return true;
 }
-
 void nqueen(int x)
 {
     if(x == N)
+        // N 까지 닿으면 배치할수 있는 가지수를 출력
         total++;
     else
     {

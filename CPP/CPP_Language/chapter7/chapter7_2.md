@@ -64,3 +64,27 @@ int *second(){
 - 3. 복사 대신 포인터를 사용
   - 함수 내에서 로컬 변수의 값을 반환하는 대신 로컬 변수의 값을 복사하거나, 동적메모리 할당을 통해 메모리를 할당하고 그 메모리 주소를 반환하는것이 안전.
   함수내에서 동적으로 메모리를 할당하고 주소를 반환하면, 해당 메모리는 함수의 수명과 상관없이 살아있음.
+# 포인터를 쓸 때 중요한 점
+- 초기화 되었는지 확인
+  - int *int_ptr;
+  - int *int_ptr {null_ptr};
+- Dangling pointer
+  - 포인터가 여전히 해제된 메모리 영역을 가리키고 있을때
+  - 메모리 접근시 예측 불가능한 동작
+  - 메모리 접근 불가시 sementations falut
+  - 잠재적인 보안위험 발생
+  - 메모리를 해제후 포인터를 NULL 로설정하자
+- memory leak
+  - 메모리 해제를 까먹었을 때
+  
+# 참조
+- 선언된 자료를 사용할때 우리는 원본을 사용하는것이 아니라 원본을 복사한 자료를 수정해서 사용함
+- &을 사용해 원본에 접근
+
+# L-value, R-value
+- l-value
+  - values that have name and addressable
+  - modifiable if they are not constants
+- r-value
+  - right side of an assignment expression
+  - literal
