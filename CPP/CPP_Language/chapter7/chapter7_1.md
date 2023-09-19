@@ -121,13 +121,13 @@ const int *score_ptr {&high_score};
 score_ptr = &low_score; // ptr의 주소를 low_socre의 주소로 변경 okay
 ```
 
-# 상수 포인터 - ins const * ptr
+# 상수 포인터 - int const * ptr
 - const 키워드를 사용해 포인터 자체를 상수화 시킴
 - 포인터가 상수화 되었기에 주소는 변경이 불가능하지만 주소안에 들어있는 값을 변경하는것은 가능하다
 ```cpp
 int a {100};
 int b {200};
-int *const ptr {&a}; // 상수 포인터 ptr에 a의 주소를 넣어줌
+int const * ptr {&a}; // 상수 포인터 ptr에 a의 주소를 넣어줌
 ptr = &b; // ptr에 b의 주소를 지시하도록 한다 > error
 *ptr = 300; // ptr안에있는 값을 변경한다
 ```
