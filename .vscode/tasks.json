@@ -12,11 +12,9 @@
             "command": "g++",
             "args": [
                 "-g",
-                "-Wall",
-                "-std=c++17",
-                "${fileDirname}\\*.cpp",
+                "${fileDirname}\\**.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "group": "build",
             "problemMatcher": {
