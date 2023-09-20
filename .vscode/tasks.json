@@ -11,7 +11,10 @@
             "label": "save and compile for C++",
             "command": "g++",
             "args": [
-                "${file}",
+                "-g",
+                "-Wall",
+                "-std=c++17",
+                "${fileDirname}\\*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

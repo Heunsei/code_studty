@@ -7,7 +7,7 @@ private:
   std::string name;
   double balance;
 public:
-  void set_balance(double bal) {balance = bal};
+  void set_balance(double bal) {balance = bal;}
   double get_balance() {return balance;}
 
   // method will be declared outside the class declaration

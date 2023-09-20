@@ -53,5 +53,6 @@
         "xtr1common": "cpp",
         "vector": "cpp",
         "queue": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }
