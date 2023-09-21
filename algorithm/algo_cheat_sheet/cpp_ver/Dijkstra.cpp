@@ -8,13 +8,14 @@
 using namespace std;
 
 vector<int> dijkstra(int start, int V, vector<pair<int,int>> adj[]){
-  vector<int> dist(V,INF); // inf로 초기화
+  vector<int> dist(V,INF); // vector dist의 원소 V개를 INF로 초기화
   priority_queue<pair<int, int>> pq;
 
   dist[start] = 0;
   pq.push(make_pair(0, start));
 
   while (!pq.empty()){
+    // 우선순위 큐는 내림차순
     int cost = -pq.top().first;
     int current = pq.top().second;
     pq.pop();
@@ -27,7 +28,6 @@ vector<int> dijkstra(int start, int V, vector<pair<int,int>> adj[]){
           dist[next] = nCost; // 갱신
           pq.push(make_pair(-nCost,next));    //pq에 저장
         }
-
       }
   }
   return dist;

@@ -5,6 +5,7 @@ def backtracking(depth, idx):
     if depth == N:
         res += 1
         return
+
     for i in range(idx, M+1):
         if i == M:
             backtracking(depth+1, 0)
