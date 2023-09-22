@@ -20,15 +20,15 @@ vector<int> dijkstra(int start, int V, vector<pair<int,int>> adj[]){
     int current = pq.top().second;
     pq.pop();
 
-      // 현재 방문한 정점의 주변 탐색
-      for (int i {0}; i < adj[current].size(); i++){
-        int next = adj[current][i].first;           // 조사할 다음 정점
-        int nCost = cost + adj[current][i].second;  // 방문한 정점을 거쳐서 갔을때의 거리
-        if (nCost < dist[next]){  // 기존 비용보다 작으면
-          dist[next] = nCost; // 갱신
-          pq.push(make_pair(-nCost,next));    //pq에 저장
-        }
+    // 현재 방문한 정점의 주변 탐색
+    for (int i {0}; i < adj[current].size(); i++){
+      int next = adj[current][i].first;           // 조사할 다음 정점
+      int nCost = cost + adj[current][i].second;  // 방문한 정점을 거쳐서 갔을때의 거리
+      if (nCost < dist[next]){  // 기존 비용보다 작으면
+        dist[next] = nCost; // 갱신
+        pq.push(make_pair(-nCost,next));    //pq에 저장
       }
+    }
   }
   return dist;
 }

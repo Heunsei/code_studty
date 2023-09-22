@@ -52,7 +52,14 @@
         "xstddef": "cpp",
         "xtr1common": "cpp",
         "vector": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "deque": "cpp",
+        "iomanip": "cpp",
+        "set": "cpp",
+        "xlocmon": "cpp",
+        "xloctime": "cpp",
+        "xmemory0": "cpp",
+        "xtree": "cpp"
     },
     "cmake.configureOnOpen": false
 }
