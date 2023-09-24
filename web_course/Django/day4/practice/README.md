@@ -1,1 +1,0 @@
-# 출력안하고 libraries에 templates를 만들고 그안에 html파일을 만들었습니다 거기서 출력이 되게끔 했어요
