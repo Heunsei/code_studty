@@ -1,6 +1,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,python,c++,django
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,visualstudiocode,python,c++,django
-
+# .idea파일 제외
+*.idea
 ### C++ ###
 # Prerequisites
 *.d
