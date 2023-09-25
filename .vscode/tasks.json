@@ -11,10 +11,9 @@
             "label": "save and compile for C++",
             "command": "g++",
             "args": [
-                "-g",
-                "${fileDirname}\\**.cpp",
+                "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "group": "build",
             "problemMatcher": {
@@ -62,7 +61,7 @@
             "group": "test",
             "args": [
                 "/C",
-                "'${fileDirname}\\${fileBasenameNoExtension}'"
+                "${fileDirname}\\${fileBasenameNoExtension}"
             ]
         },
         {
@@ -116,7 +115,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "'${fileDirname}\\${fileBasenameNoExtension}.exe'"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
