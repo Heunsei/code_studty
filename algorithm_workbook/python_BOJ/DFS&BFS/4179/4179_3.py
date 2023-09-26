@@ -20,22 +20,24 @@ def bfs(jihun_x, jihun_y):
     jihun = deque()
     jihun.append((jihun_x, jihun_y, 0))
     # 지훈이를 먼저 옮겨 놓자
-    while jihun:
-        crt_x, crt_y, acc= jihun.popleft()
+    while True:
+        for i in range(len(jihun)):
+            crt_x, crt_y, acc = jihun.popleft()
 
-        if graph[crt_x][crt_y] == 'F':
-            continue
+            if graph[crt_x][crt_y] == 'F':
+                continue
 
-        if check_end(crt_x, crt_y):
-            res = min(acc, res)
+            if check_end(crt_x, crt_y):
+                print(acc+1)
+                return
 
-        for k in range(4):
-            nx = crt_x + dx[k]
-            ny = crt_y + dy[k]
-            if is_valid(nx, ny) and graph[nx][ny] == '.':
-                nxt_acc = acc + 1
-                graph[nx][ny] = 'J'
-                jihun.append((nx, ny, nxt_acc))
+            for k in range(4):
+                nx = crt_x + dx[k]
+                ny = crt_y + dy[k]
+                if is_valid(nx, ny) and graph[nx][ny] == '.':
+                    nxt_acc = acc + 1
+                    graph[nx][ny] = 'J'
+                    jihun.append((nx, ny, nxt_acc))
         # fire 의 1차 움직임을 구현해야함
         for _ in range(len(fire)):
             cur_fire_x, cur_fire_y = fire.popleft()
@@ -44,13 +46,11 @@ def bfs(jihun_x, jihun_y):
                 nxt_fire_y = cur_fire_y + dy[k]
                 if is_valid(nxt_fire_x, nxt_fire_y):
                     if graph[nxt_fire_x][nxt_fire_y] == 'J' or graph[nxt_fire_x][nxt_fire_y] == '.':
-                        fire.append((nxt_fire_x,nxt_fire_y))
+                        fire.append((nxt_fire_x, nxt_fire_y))
                         graph[nxt_fire_x][nxt_fire_y] = 'F'
-    if res == 987654321:
-        print("IMPOSSIBLE")
-    else:
-        print(res+1)
-
+        if not jihun:
+            print("IMPOSSIBLE")
+            return
 
 # 미로에서 탈출하기
 dx = [1, 0, -1, 0]
@@ -59,11 +59,10 @@ R, C = map(int, input().split())
 graph = [list(input()) for _ in range(R)]
 # . 지나갈 수 있는 공간 / J 미로 초기 공간 / F 불이 난 공간 / # 벽
 fire = deque()
-res = 987654321
 for i in range(R):
     for j in range(C):
         if graph[i][j] == 'J':
             j_x, j_y = i, j
         if graph[i][j] == 'F':
-            fire.append((i,j))
+            fire.append((i, j))
 bfs(j_x, j_y)

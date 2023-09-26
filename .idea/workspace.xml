@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7e4bc04a-ab97-4da3-9f30-854bf301fe20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179/4179.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_workbook/python_BOJ/study/09_26/4179_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179/4179_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,28 +33,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.4179">
-    <configuration name="18429" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="code_studty" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/combination&amp;permutation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/combination&amp;permutation/18429.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SSAFY\Desktop\code_studty\algorithm_workbook\python_BOJ\DFS&amp;BFS\4179" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.4179 (1)">
     <configuration name="2992" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code_studty" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,6 +60,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="4179 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="code_studty" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179/4179.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="4179" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code_studty" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\Desktop\code_studty\algorithm_workbook\python_BOJ\DFS&amp;BFS\4179\4179.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +114,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/study/09_26/4179_2.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\Desktop\code_studty\algorithm_workbook\python_BOJ\DFS&amp;BFS\4179\4179_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="5568" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="4179_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code_studty" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,11 +131,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/combination&amp;permutation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/combination&amp;permutation/5568.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179/4179_3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4179 (1)" />
+        <item itemvalue="Python.4179_3" />
         <item itemvalue="Python.4179" />
         <item itemvalue="Python.4179_2" />
         <item itemvalue="Python.2992" />
-        <item itemvalue="Python.18429" />
-        <item itemvalue="Python.5568" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +181,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179.py</url>
+          <url>file://$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/4179/4179.py</url>
           <line>1</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
