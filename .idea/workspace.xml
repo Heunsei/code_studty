@@ -41,7 +41,7 @@
       <recent name="C:\Users\SSAFY\Desktop\code_studty\algorithm_workbook\python_BOJ\DFS&amp;BFS\4179" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.12865">
+  <component name="RunManager" selected="Python.22868">
     <configuration name="10814" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code_studty" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4386 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="22868" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code_studty" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +92,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/MST/4836" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/graph" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/MST/4836/4386.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/graph/22868.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.22868" />
         <item itemvalue="Python.12865" />
         <item itemvalue="Python.9653" />
         <item itemvalue="Python.7785" />
         <item itemvalue="Python.10814" />
-        <item itemvalue="Python.4386 (1)" />
       </list>
     </recent_temporary>
   </component>
