@@ -20,7 +20,9 @@ int main(){
         for(int j{0}; k<=k; j++){   // j는 무게를 나타냄
             // i번째 물건을 무게가 j(0<=j<=k)인 배낭에 넣어봄
             // 무게가 j+w[i]인 배낭도 가치가 최대가 되는지 확인
-            temp[j+w[i]] = max(temp[j+w[i]], d[j]+v[i]);
+            // j라는 무게가 들어갈 수 있다? > i번째 무게 + j를 넣은 가방으로 가서 값비교
+            if(j+w[i] <= k)
+                temp[j+w[i]] = max(temp[j+w[i]], d[j]+v[i]);
         }
         for(int j=0; j<=k; j++) d[j] = temp[j]; // d[i] 갱신
     }
