@@ -2,6 +2,11 @@
 # 복습 해야할 문제 또는 그날 얻은 새로운 지식
 [c++link](https://modoocode.com/135)
 https://devdocs.io/cpp/container/deque/deduction_guides
+
+## 23/10/12
+- LCA - 최소 공통조상 알고리즘 학습 > 복습이 필요
+- 다익스트라가 아직 숙지가 덜됨
+
 ## 23/10/09
 - 연구실 - visited 를 bfs 안에 선언하고 그걸로 접근
 

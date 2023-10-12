@@ -9,6 +9,7 @@ int N, M, K, X;
 int d[3000001]; 
 vector<int> graph[300001];
 
+// 최단거리가 K인 모든 도시들의 번호를 한줄에 하나씩 오름차순으로 출력
 void dijkstra(int start){
     d[start] = 0;
     queue<int> q;
@@ -37,6 +38,7 @@ int main(){
         graph[a].push_back(b);
     }
     dijkstra(X);
+    // 도착 가능한지 확인하는 check
     bool check = false;
     for(int i=1; i<=N; i++){
         if(d[i]==K){
@@ -44,6 +46,7 @@ int main(){
             check = true;
         }
     }
+    // 도착 못했으면 -1 출력
     if(!check)  cout << "-1";
     return 0;
 }

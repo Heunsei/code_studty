@@ -41,7 +41,7 @@ Mystring::~Mystring(){
   delete[] str;
 }
 
-// 복사대입연산자
+// 복사배정연산자
 Mystring &Mystring::operator=(const Mystring &rhs){
   std::cout << "using copy assignment" << std::endl;
   if(this == &rhs)

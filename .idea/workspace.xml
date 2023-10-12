@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7e4bc04a-ab97-4da3-9f30-854bf301fe20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm_workbook/python_BOJ/tree/1991.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_workbook/python_BOJ/tree/1991.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_workbook/cpp_BOJ/dijkstra/18352/18352.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_workbook/cpp_BOJ/dijkstra/18352/18352.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_workbook/python_BOJ/tree/11437.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_workbook/python_BOJ/tree/11437/11437.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +45,14 @@
       <recent name="C:\Users\Heun\Desktop\codestudy\algorithm_workbook\python_BOJ\study\10_09" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SSAFY\Desktop\code_studty\algorithm_workbook\python_BOJ\tree\11437" />
       <recent name="C:\Users\heun\Desktop\code_studty\algorithm_workbook\python_BOJ\MST" />
       <recent name="C:\Users\heun\Desktop\code_studty\algorithm_workbook\python_BOJ\dijkstra\4836" />
       <recent name="C:\Users\heun\Desktop\code_studty\algorithm_workbook\python_BOJ\dijkstra" />
       <recent name="C:\Users\SSAFY\Desktop\code_studty\algorithm_workbook\python_BOJ\DFS&amp;BFS\4179" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.11437">
+  <component name="RunManager" selected="Python.LCA">
     <configuration name="11437" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code_studty" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,7 +65,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/tree/11437.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\SSAFY\Desktop\code_studty\algorithm_workbook\python_BOJ\tree\11437\11437.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="17142_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="LCA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code_studty" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,11 +145,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/17142" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_cheatsheet/python_ver" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Heun\Desktop\codestudy\algorithm_workbook\python_BOJ\DFS&amp;BFS\17142\17142_3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_cheatsheet/python_ver/LCA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LCA" />
         <item itemvalue="Python.11437" />
         <item itemvalue="Python.17142_3 (1)" />
         <item itemvalue="Python.17142_2" />
         <item itemvalue="Python.17142" />
-        <item itemvalue="Python.17142_3" />
       </list>
     </recent_temporary>
   </component>
