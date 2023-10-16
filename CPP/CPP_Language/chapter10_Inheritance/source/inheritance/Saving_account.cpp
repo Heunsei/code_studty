@@ -1,11 +1,11 @@
 #include <iostream>
 #include "Saving_account.h"
 
+// 생성자
 Saving_Account::Saving_Account()
     :int_rate{3.0}{
-
 }
-
+// 파괴자
 Saving_Account::~Saving_Account(){
 }
 
