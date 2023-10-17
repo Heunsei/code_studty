@@ -1,7 +1,9 @@
 # 프렌드
 - 프렌드 클래스 : 프렌드로 지정한 클래스의 멤버는 지정한곳의 클래스 멤버를 직접참조 가능
 - 프렌드 함수 : 두 객체를 비교할때 씀
+	- 클래스 멤버가 아닌 특수한 엑세스 권한이 부여되는 일반적인 외부 함수
 - 프렌드 외부함수 : 두 객체를 가지고 연산을 하는 경우 사용
+
 
 ## 특징
 - 1. 지정할 개체의 시작부분에 friend를 명시
@@ -78,3 +80,28 @@ void RectManager::copy(Rect& dest, Rect& src) {
 	dest.height = src.height;
 }
 ```
+
+```cpp
+class B;
+
+class A {
+public:
+   int Func1( B& b );
+
+private:
+   int Func2( B& b );
+};
+
+class B {
+private:
+   int _b;
+
+   // A::Func1 is a friend function to class B
+   // so A::Func1 has access to all members of B
+   friend int A::Func1( B& );
+};
+
+int A::Func1( B& b ) { return b._b; }   // OK
+int A::Func2( B& b ) { return b._b; }   // C2248
+```
+- 클래스 멤버로 프렌드 함수가 지정되면 위 코드의 A는 B의 모든 멤버에 접근이 가능하다. 내 안에 지정된 친구는 내 모든 멤버에 접근이 가능하다
