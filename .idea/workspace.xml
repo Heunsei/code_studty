@@ -34,11 +34,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/study/10_11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/dijkstra" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Heun\Desktop\codestudy\algorithm_workbook\python_BOJ\dijkstra" />
       <recent name="C:\Users\Heun\Desktop\codestudy\algorithm_workbook\python_BOJ\study\10_11" />
       <recent name="C:\Users\Heun\Desktop\codestudy\algorithm_workbook\python_BOJ\study\10_09" />
     </key>
@@ -50,7 +51,7 @@
       <recent name="C:\Users\SSAFY\Desktop\code_studty\algorithm_workbook\python_BOJ\DFS&amp;BFS\4179" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.4485">
+  <component name="RunManager" selected="Python.17396">
     <configuration name="11437" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code_studty" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,27 +73,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="17142_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="code_studty" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/17142" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/17142/17142_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="17142_3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code_studty" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,6 +86,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/DFS&amp;BFS/17142/17142_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="17396" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="code_studty" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/study/10_18" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm_workbook/python_BOJ/study/10_18/17396.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.17396" />
         <item itemvalue="Python.4485" />
         <item itemvalue="Python.LCA" />
         <item itemvalue="Python.11437" />
         <item itemvalue="Python.17142_3 (1)" />
-        <item itemvalue="Python.17142_2" />
       </list>
     </recent_temporary>
   </component>
@@ -211,6 +212,16 @@
           <url>file://$PROJECT_DIR$/algorithm_workbook/python_BOJ/MST/4836/4386.py</url>
           <line>3</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_workbook/python_BOJ/study/10_18/17396.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_workbook/python_BOJ/study/10_18/17396.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
