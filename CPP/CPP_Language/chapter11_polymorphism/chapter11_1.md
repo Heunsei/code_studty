@@ -1,4 +1,6 @@
 # 다형성 polymorphsim
+### 참고 블로그 : https://dream-and-develop.tistory.com/103
+
 
 # 1.다형성 이란?
 - OOP의 기능
@@ -121,6 +123,7 @@ d.withdraw(1000); // Trust::withdraw()
 
 ## 5. Virtual destructors 가상 파괴자
 - 만약 클래스가 가상 함수를 가지고 있다면 '언제나' public virtual desturctor를 제공해야함
+- 그렇지 않으면 기본 클래스 포인터로 파생 클래스 객체를 생성 하였을때, 생성된 파생 객체에 대해 소멸자가 실행되지 않음.
 - 만약 base 클래스 파괴자가 가상이라면 derived클래스 파괴자 또한 가상이다
 ```c++
 class Account{
@@ -128,4 +131,78 @@ public:
     virtual void withdraw(double amount);
     virtual ~Account();
 };
+```
+
+```cpp
+Base *p = new Derived();    // 기본 클래스 포인터로 파생클래스 객체 생성
+delete p;   // 기본 클래스의 소멸자만 실행  
+```
+
+## 6. Override specifier
+- 오버라이드 지정자, 재정의 키워드를 사용해 기본 클래스에서 가상 함수를 재정의하는 멤버 함수를 지정
+- // void draw();
+- void drow() override; // 컴파일러한테 오버라이딩 확인하도록 시킴
+
+- const 지정자
+```cpp
+class Base{
+public:
+    virtual void say_hello() const{
+        std::cout << "Hello - base class object" << std::endl;
+    }
+    virtual ~Base(){}
+};
+
+class Derived : public Base{
+public:
+
+    virtual void say_hello()  { // const가 없으니 overriding 되지 않음
+        std::cout << "Derived class" << std::emdl;
+    }
+    virtual ~Derived(){}
+};
+
+Base p1 = new Base();
+p1->say_hello();    // dynamic-bound. base
+Base p2 = new Derived();
+p2->say_hello();    // static-bound. base
+```
+
+- override specifier 
+```cpp
+class Base{
+public:
+    virtual void say_hello() const{
+        std::cout << "Base" << std::endl;
+    }
+    virtual ~Base();
+};
+
+class Derived : public Base {
+public:
+    virtual void say_hello() override {     // compile error, const 안넣었어용
+        std::cout << "Derived" << std::endl;
+    }
+    virtual ~Derived(){}
+}
+```
+
+- final 특별자
+    - 클래스에 사용 경우 class가 derived 되는것을 방지함
+        - 그 클래스를 상속하려할때 그것을 막음
+    - 메소드 레벨에 사용경우 메소드가 메소드 클래스에서 overridein 되는것을 방지함.
+
+```cpp
+class A{
+public:
+    virtual void do_somiething();
+};
+
+class B: public A{
+    virtual void do_somiething() final; // 오버로딩 방지
+};
+
+class C: public B{
+    virtual void do_something(); // compiler error
+}
 ```
