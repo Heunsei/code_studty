@@ -3,6 +3,10 @@
 [c++link](https://modoocode.com/135)
 https://devdocs.io/cpp/container/deque/deduction_guides
 
+## 23/10/19
+- cat > input.txt
+- cat input.txt | ./a.exe
+
 ## 23/10/12
 - LCA - 최소 공통조상 알고리즘 학습 > 복습이 필요
 - 다익스트라가 아직 숙지가 덜됨

@@ -1,5 +1,9 @@
 {
     "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements",
         "algorithm": "cpp",
         "array": "cpp",
         "atomic": "cpp",
@@ -58,6 +62,7 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xtree": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "xmemory0": "cpp"
     }
 }
