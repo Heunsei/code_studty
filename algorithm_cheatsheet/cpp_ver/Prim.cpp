@@ -24,6 +24,7 @@ int main()
 		cin >> from >> to >> cost;
 		graph[from].push_back(make_pair(to, cost));
 		graph[to].push_back(make_pair(from, cost));
+		// graph[to].emplace_back(from, cost);
 	}
 
 	pq.push(make_pair(0, 1)); // 가중치는 0, 1번 노드부터 시작
