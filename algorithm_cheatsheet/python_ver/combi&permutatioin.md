@@ -62,7 +62,7 @@ def combination(depth, idx):
         combination(depth + 1, nxt + 1)
         ans.pop()
 ```
-
+5-3 = 2
 ```python
 a= [3,6,7,1,5,4]
 N = 6
