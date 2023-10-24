@@ -101,6 +101,9 @@ std::cout << std::showpoint;
 std::cout << num << std::endl; // 12.3400
 ```
 
-- 원래 돌리기
+- 원래대로 돌리기
     - std::cout.unsetf(std::ios::scientific | std::ios::fixed);
     - std::cout << std::resetiosflags(std::ios::floatfield);
+
+### 4. align and fill
+- skip
