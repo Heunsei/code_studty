@@ -57,3 +57,16 @@ std::shared_ptr<A> pa2(a);  // 종료시 이미 사라진 a를 삭제
     p3 = p1;
 }
 ```
+
+## 5. weak pointer
+- weak_ptr<T>
+    - shared_ptr로부터 생성됨
+    - reference use count를 세지 않음
+    - 순환 참조시 shared_ptr의 메모리가 해제되지 않는것을
+    방지하기위해 사용
+- 멤버 함수
+    - expired() 할당받은 shared_ptr의 객체의 use_count가 0이면 true 아니면 false 리턴
+    - reset() 수요훈 자윈을 release
+- 서로가 서로를 참조하는 shared strong ownership에서 발생하는 heap deallocation을 막기 위함
+
+- A 는 shared_ptr<B> B는 weak_ptr<A> 이렇게 서로를 참조하면 힙에있는 저장공간이 안전하게 해제됨

@@ -1,7 +1,8 @@
 # 중요한 것은 꺾이지 않는 마음
 # 복습 해야할 문제 또는 그날 얻은 새로운 지식
-[c++link](https://modoocode.com/135)
-https://devdocs.io/cpp/container/deque/deduction_guides
+[c++link](https://en.cppreference.com/w/)
+[g++명령어](https://seamless.tistory.com/2)
+[vscodd 환경설정](https://jm4488.tistory.com/73)
 
 ## 23/10/19
 - cat > input.txt
