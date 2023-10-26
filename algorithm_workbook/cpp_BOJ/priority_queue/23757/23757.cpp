@@ -7,8 +7,6 @@ using namespace std;
 
 int N, M;
 std::priority_queue<int> present;
-std::priority_queue<int> children;
-
 
 int main(){
 
@@ -20,7 +18,18 @@ int main(){
         present.push(a);
     }
 
+    bool isPass = true;
 
+    for(int i{0}; i<M; i++){
+        int child;
+        cin >> child;
 
+        if(present.top()>=child){
+            present.push(present.top() - child);
+            present.pop();
+        }
+        else isPass = false;
+    }
+    cout << (isPass ? 1 : 0);
     return 0;
 }
