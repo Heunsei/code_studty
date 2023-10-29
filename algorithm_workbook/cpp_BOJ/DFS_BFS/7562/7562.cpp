@@ -6,18 +6,23 @@ using namespace std;
 
 int width;
 int T, I;
-int arr[305][305];
-int x, y, end_x, end_y;
-std::queue<pair<int,int>> q;
 
 int dx[8] = {-1, -2, -2, -1, 1, 2, 2, 1};
 int dy[8] = {-2, -1, 1, 2, -2, -1, 1, 2};
 
-void bfs(int x, int y){
+void bfs(int x, int y, int end_x, int end_y){
+    int arr[305][305];
+
+    for (int i{0}; i<I; i++){
+        for(int j{0}; j<I; j++){
+            arr[i][j] = -1;
+        }
+    }
+    std::queue<pair<int,int>> q;
     q.push({x,y});
     arr[x][y] = 0;
-    while(!q.empty()){
 
+    while(!q.empty()){
         int cx = q.front().first;
         int cy = q.front().second;
 
@@ -38,7 +43,7 @@ void bfs(int x, int y){
             q.push({nx,ny});
             arr[nx][ny] = arr[cx][cy] + 1;
         }
-    } x 
+    } 
 }
 
 
@@ -50,23 +55,13 @@ int main(){
     // 반복횟수 입력
     std::cin >> T;
     while(T--){
+        // 체스판의 크기
+        int x,y;
+        int end_x, end_y;
         std::cin >> I;
-
-        for(int i{0}; i<I; i++){
-            for(int j{0}; j<I; j++){
-                arr[i][j] = -1;
-            }
-        }
-
         cin >> x >> y;
         cin >> end_x >> end_y;
-        bfs(x,y);
-
-        for(int i{0}; i<I; i++){
-            for(int j{0}; j<I; j++){
-                arr[i][j] = -1;
-            }
-        }
+        bfs(x, y, end_x, end_y);
+        // cout << x << " " << y << " " << end_x << " " << end_y << endl;
     }
-
 }
