@@ -13,19 +13,21 @@ bool visited[1001];
 
 // 출발하는 방을 제외하고 i번째로 방문하는 방에 i개의 우유 전달
 
-void solve(int start, int target, int count){
+bool solve(int start, int target, int count){
     visited[start] = true;
     if (start==target){
-        milk[target];
-        return;
+        milk[start] += count;
+        return true;
     }
 
     for(int next : tree[start]){
         if (visited[next]) continue;
-        milk[next] += count+1;
-        visited[next] = true;
-        solve(next, target, count+1);
+        if (solve(next, target, count+1)){
+            milk[next] += count;
+            return true;
+        } 
     }
+    return false;
 }
 
 
