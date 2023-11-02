@@ -21,11 +21,7 @@ for i in range(0, m+1):
     compare_gas = first_a * i + first_b
     acc = i
     for j in range(1,n):
-        if candidate[j][0] == 0:
-            # 필요한 용액의 양
-            req_solution = compare_gas - candidate[j][1]
-        else:
-            req_solution = (compare_gas - candidate[j][1]) / candidate[j][0]
+        req_solution = (compare_gas - candidate[j][1]) / candidate[j][0]
         # 정수값이 아니면 break
         if req_solution % 1 != 0:
             is_valid = False
