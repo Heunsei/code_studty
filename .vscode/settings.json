@@ -65,7 +65,8 @@
         "xutility": "cpp",
         "xmemory0": "cpp",
         "stack": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "numbers": "cpp"
     },
     "workbench.colorCustomizations": {
         "activityBar.background": "#3A117A",
