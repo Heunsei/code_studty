@@ -1,28 +1,31 @@
-#include <iostream>
-#include <vector>
-
+#include<iostream>
+#include<algorithm>
+#include<vector>
+#include<cmath>
 using namespace std;
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
 
-    int N, M;
-    cin >> N >> M;
-    vector<int> arr(N, 0);
-    
-    for(int i=0; i<N; i++){
-        int temp;
-        cin >> temp;
-        if (i==0){
-            arr[i] = temp%M;
-        }else{
-            arr[i] = arr[i] + temp%M;
-        }
+int n, m, x;
+long long cnt[1001];
+long long sum, ans;
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+
+    cin >> n >> m;
+
+    for(int i = 0; i < n; i++)
+    {
+        cin >> x;
+        sum += x;
+        cnt[sum % m]++;
     }
 
-    for (auto i : arr){
-        cout << i << '\n';
+    for(int i = 0; i <= m; i++)
+    {
+        ans += cnt[i] * (cnt[i] - 1) / 2;
     }
 
-    return 0;
+    cout << ans + cnt[0];
 }
