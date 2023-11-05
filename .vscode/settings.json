@@ -72,5 +72,6 @@
         "activityBar.background": "#3A117A",
         "titleBar.activeBackground": "#5118AA",
         "titleBar.activeForeground": "#FDFCFF"
-    }
+    },
+    
 }
