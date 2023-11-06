@@ -11,7 +11,8 @@
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
             "cwd": "${workspaceFolder}",
-            
+			"preLaunchTask": "C/C++: clang++ 활성 파일 빌드",
+
         }
     ]
 }
