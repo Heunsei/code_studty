@@ -1,3 +1,4 @@
+// 좋은 수
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -12,7 +13,6 @@ int main(){
     }
     
     sort(arr.begin(), arr.end());
-
     int start_index = 0;
     int end_index = 0;
     int check_index = 1;
@@ -21,9 +21,15 @@ int main(){
     while (check_index < N){
         if (arr[start_index] + arr[end_index] == arr[check_index]){
             cnt++;
+
         }
-        if         
+        if (arr[start_index] + arr[end_index] > arr[check_index]){
+            end_index --;
+        }else if (arr[start_index] + arr[end_index] < arr[check_index]){
+            start_index++;
+        }      
     }
     
+            
 
 }
