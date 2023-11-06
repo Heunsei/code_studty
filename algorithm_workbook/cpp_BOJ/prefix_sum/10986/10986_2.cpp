@@ -4,6 +4,7 @@
 #include<cmath>
 using namespace std;
 
+// https://dev-astra.tistory.com/330
 int n, m, x;
 long long cnt[1001];
 long long sum, ans;

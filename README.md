@@ -4,6 +4,7 @@
 [g++명령어](https://seamless.tistory.com/2)
 [vscode 환경설정](https://jm4488.tistory.com/73)
 [task.json편집](https://80000coding.oopy.io/93593d7e-617f-412e-9615-8051bd16104f)
+[디버깅](https://moong-bee.com/posts/c-cpp-use-vscode-in-mac)
 ```
 - cat > input.txt
 - cat input.txt | ./a.exe
