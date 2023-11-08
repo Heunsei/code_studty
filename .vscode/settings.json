@@ -1,0 +1,15 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#3A117A",
+        "titleBar.activeBackground": "#5118AA",
+        "titleBar.activeForeground": "#FDFCFF"
+    },
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+        "algorithm": "cpp",
+        "format": "cpp"
+    }
+}
