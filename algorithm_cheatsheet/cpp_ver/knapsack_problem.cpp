@@ -15,9 +15,11 @@ struct Object{
     
     // std::sort에서 사용할 예정
     inline bool operator< (const Object& obj){
+        // 비교연산자 오버로딩
+        // 왼쪽에 오는 값이 this 객체임
         return this->value_per_unit_weight < obj.value_per_unit_weight;
     }
-
+    // friend함수는 멤버함수가 아니다.
     friend std::ostream& operator<<(std::ostream& os, const Object& obj);
 };
 
@@ -27,8 +29,9 @@ std::ostream& operator<<(std::ostream& os, const Object& obj){
     return os;
 }
 
+// 담겨진 물건들을 확인하고 빼는 함수
 auto fill_kanpsack(std::vector<Object>& objects, int kanpsack_capacity){
-    std::vector<Object> knapsack_content; 
+    std::vector<Object> knapsack_content;  
     knapsack_content.reserve(objects.size());
 
     // 물건들을 내림차순으로 정렬
@@ -36,8 +39,9 @@ auto fill_kanpsack(std::vector<Object>& objects, int kanpsack_capacity){
     std::reverse(objects.begin(), objects.end());
 
     auto current_object = objects.begin();  // 맨처음에 집어볼 가치가 가장 큰 오브젝트
-    int current_total_weight = 0;           //
+    int current_total_weight = 0;           // 총 선택한 무게
 
+    // 총 수용량을 넘기지 않으면서  현재 오브젝트가 끝까지 가지 않을때 까지
     while(current_total_weight < kanpsack_capacity && current_object != objects.end()){
         knapsack_content.push_back(*current_object);
 

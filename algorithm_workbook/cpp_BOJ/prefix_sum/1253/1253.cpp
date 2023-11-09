@@ -17,11 +17,10 @@ int main(){
     int end_index = 0;
     int check_index = 1;
     int cnt = 0;
-
+    
     while (check_index < N){
         if (arr[start_index] + arr[end_index] == arr[check_index]){
             cnt++;
-
         }
         if (arr[start_index] + arr[end_index] > arr[check_index]){
             end_index --;
