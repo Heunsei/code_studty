@@ -17,8 +17,7 @@ int main(){
         cin >> arr[i];
     }
 
-
-    int i = 0;
+    int i = 0;      // arr의 양쪽 끝에서 탐색
     int j = N-1;
     int result = abs(arr[i] + arr[j]);
     pair<int,int> position = {arr[i], arr[j]}; 

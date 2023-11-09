@@ -1,14 +1,13 @@
+// BOJ : 12891 DNA 비밀번호
 #include <iostream>
-#include <vector>
 #include <string>
 
 using namespace std;
 
-
-
 int pwd_count[4] = {0, };
 int compare[4] = {0, };
 
+// 지금까지 나온 임시비밀번호의 문자열 갯수를 저장
 void add(char c){
     switch(c){
         case 'A':
@@ -26,6 +25,7 @@ void add(char c){
     }   
 }
 
+// 문자열 갯수를 보고 빼기
 void sub(char c){
     switch(c){
         case 'A':
@@ -59,10 +59,10 @@ int main(){
     // 임의의 문자열 길이 S, 부분비밀번호 P자리
     int S, P;
     cin >> S >> P;
-    
+    // 비밀번호를 찾을 문자열
     string passward;
     cin >> passward;
-    
+    // 최소입력값 받아오기
     for(int i{0}; i<4; i++){
         cin >> compare[i];
     }
@@ -79,7 +79,7 @@ int main(){
         if (check()) result++;
         // cout << i << " " << j << " count : " << result <<'\n';
         sub(passward[i]);
-        i+=1; j+=1;
+        i+=1; j+=1;     // 비밀번호 길이는 일정하니 1칸씩 오른쪽으로
         add(passward[j]);
     }
     cout << result << '\n';

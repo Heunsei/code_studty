@@ -10,6 +10,7 @@
         "**/templates/**/*": "django-txt",
         "**/requirements{/**,*}.{txt,in}": "pip-requirements",
         "algorithm": "cpp",
-        "format": "cpp"
+        "format": "cpp",
+        "*.tcc": "cpp"
     }
 }
