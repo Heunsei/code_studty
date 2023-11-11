@@ -47,7 +47,7 @@ int main()
     cout << "그래프 입력 [정점 , 정점 가중치] : ";
     cin >> from >> to >> cost;
     adj[from].push_back(make_pair(to,cost));
-    adj[to].push_back(make_pair(from, cost));
+    adj[to].push_back(make_pair(from, cost)); // makepair 안쓰고 {}이렇게 넣어도 상관없음
   }
 
   printf("\n===다익스트라결과===\n");
