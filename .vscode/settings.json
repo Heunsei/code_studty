@@ -11,6 +11,9 @@
         "**/requirements{/**,*}.{txt,in}": "pip-requirements",
         "algorithm": "cpp",
         "format": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "xstring": "cpp",
+        "initializer_list": "cpp",
+        "xutility": "cpp"
     }
 }
