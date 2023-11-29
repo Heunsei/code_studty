@@ -16,6 +16,9 @@
         "initializer_list": "cpp",
         "xutility": "cpp",
         "ratio": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "iostream": "cpp",
+        "xlocale": "cpp",
+        "xiosbase": "cpp"
     }
 }
