@@ -19,6 +19,7 @@
         "stack": "cpp",
         "iostream": "cpp",
         "xlocale": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "vector": "cpp"
     }
 }
