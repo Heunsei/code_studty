@@ -20,6 +20,7 @@
         "iostream": "cpp",
         "xlocale": "cpp",
         "xiosbase": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "queue": "cpp"
     }
 }
