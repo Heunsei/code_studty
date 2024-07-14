@@ -27,6 +27,5 @@ int main() {
     }
 
     cout << MAX + 1;
-
     return 0;
 }

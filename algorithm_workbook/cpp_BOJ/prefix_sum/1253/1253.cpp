@@ -28,7 +28,4 @@ int main(){
             start_index++;
         }      
     }
-    
-            
-
 }

@@ -17,6 +17,7 @@ int main(){
 
     sort(arr, arr+N);
 
-    for(int i{0}; i<N; i++)
+    for(int i{0}; i<N; i++){
         std::cout << arr[i] << '\n';
+    }
 }
