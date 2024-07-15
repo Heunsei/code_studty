@@ -18,13 +18,11 @@ int main()
 
     cout << format("{}\n", 1); // 런타임 때 format_string이 결정되는 경우 vformat 사용
     format_to(o, "{}\n", 2);
-
     vector<int> numbers;
     size_t n;
 
     cin >> n;
     numbers.reserve(n);
-
     istream_iterator<int> in(cin);
     copy_n(in, n, back_inserter(numbers)); // cin으로부터 n개의 int를 numbers에 입력
 

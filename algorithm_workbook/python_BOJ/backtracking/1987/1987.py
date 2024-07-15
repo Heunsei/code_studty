@@ -11,7 +11,6 @@ dj = [1, 0, -1, 0]
 def is_valid(x, y):
     return 0 <= x < R and 0 <= y < C
 
-
 def search(pos_i, pos_j, tmp):
     global cnt
     cnt = max(cnt, tmp)
@@ -22,7 +21,6 @@ def search(pos_i, pos_j, tmp):
             alpha.add(graph[ni][nj])
             search(ni, nj, tmp+1)
             alpha.remove(graph[ni][nj])
-
 
 alpha.add(graph[0][0])
 search(0, 0, 0)
