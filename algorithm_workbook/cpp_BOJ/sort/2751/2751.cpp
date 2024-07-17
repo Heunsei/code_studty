@@ -43,6 +43,7 @@ void merge_sort(int s, int e){
     int index1 = s;
     int index2 = m + 1;
 
+    // 그룹 병합.
     while(index1 <= m && index2 <=e){
         if(tmp[index1] > tmp[index2]){
             A[k] = tmp[index2];
@@ -54,6 +55,7 @@ void merge_sort(int s, int e){
             index1++;
         }
     }
+    // 남아있는 값 정리
     while(index1 <= m){
         A[k] = tmp[index1];
         k++;
