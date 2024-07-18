@@ -8,7 +8,6 @@ for i in range(N):
         sell[book] += 1
     else:
         sell.setdefault(book, 1)
-
 max_book = 0
 # max_book = max(sell.values())
 for book, num in sell.items():
