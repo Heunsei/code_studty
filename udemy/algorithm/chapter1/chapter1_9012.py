@@ -16,7 +16,6 @@ for _ in range(int(input())):
             else:
                 isVPS = False
                 break
-
     if len(stk) > 0:
         isVPS = False
     # VPS가 true면 YES 아니면 NO
