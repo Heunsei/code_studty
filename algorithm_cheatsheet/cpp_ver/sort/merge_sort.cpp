@@ -11,7 +11,6 @@
 using namespace std;
 int sorted[8];
 
-
 void merge(int arr[], int start, int end){
     int mid = (start+end)/2;
     // k는 sorted 리스트의 위치를 가르킬 변수

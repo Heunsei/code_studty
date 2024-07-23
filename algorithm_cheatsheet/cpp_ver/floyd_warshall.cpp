@@ -8,6 +8,7 @@
 using namespace std;
 
 const int inf = 1e9;
+// 크기 설정
 int arr[101][101];
 int n,m;
 
