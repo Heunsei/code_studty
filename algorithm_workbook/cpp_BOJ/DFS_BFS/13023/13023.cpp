@@ -15,7 +15,7 @@ int main(){
     cin >> N >> M;
     A.resize(N);
     visited = vector<bool>(N, false);
-    
+    // 인접 리스트를 채워주는 과정
     for(int i{0}; i<M; i++){
         int s,e;
         cin >> s >> e;
@@ -36,6 +36,7 @@ int main(){
     return 0;
 }
 void DFS(int now, int depth){
+    // 이미 도착해있거나 깊이가 5가되면 5명이므로 true로 바꾸고 return
     if(depth == 5 || isArrived){
         isArrived = true;
         return;
