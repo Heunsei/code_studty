@@ -43,11 +43,12 @@ class dynamic_array
             return data[index];
         throw "index out of range";
     }
-    // size 함수 생성 및 소멸자 구현
+    // size 함수 생성
     size_t size() const
     {
         return n;
     }
+    // 소멸자
     ~dynamic_array()
     {
         delete[] data;
