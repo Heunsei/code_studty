@@ -44,7 +44,7 @@ std::cout << std::noboolalpha
 - dec(10진수)
 ```cpp
 int num {255};
-// showbase를 설정해주지 않으면 ff이렇게 나와서 알아보기힘듬  
+// showbase를 설정해주지 않으면 ff이렇게 나와서 알아보기힘듬
 std::cout << std::showbase ; // std::noshowbase
 std::cout << std::dec << num << std::endl; // 255
 std::cout << std::hex << num << std::endl; // 0xff
